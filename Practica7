@@ -1,0 +1,36 @@
+//Practica7
+#include <stdio.h>
+#include <stdlib.h>
+//DIAS DE LAS SEMANAS
+int main(){
+    int dia;
+    printf("Introduca un numero en el rango de (1 - 7): ");
+    scanf("%i", &dia);
+
+    switch (dia){
+    case(1):
+        printf("El dia es Lunes");
+        break;
+    case(2):
+        printf("El dia es Martes");
+        break;
+    case(3):
+        printf("El dia es Miercoles");
+        break;
+    case(4):
+        printf("El dia es Jueves");
+        break;
+    case(5):
+        printf("El dia es Viernes");
+        break;
+    case(8):
+        printf("El dia es Sabado");
+        break;
+    case(7):
+        printf("El dia es Domingo");
+        break;
+    default:
+        printf("ERROR----, El numero ingresado no es valido");
+        break;
+    }
+}
