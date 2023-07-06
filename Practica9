@@ -1,0 +1,25 @@
+//Practica9
+#include <stdio.h>
+#include <stdlib.h>
+
+int main (){
+
+    int n,contadorapropados=0, contadorsuspenso=0;
+    float nota;
+
+    printf("Introduccion el numero de alumnos: ");
+    scanf("%d", &n);
+
+    for(int i=1; i<=n; i++){
+
+        printf("Introduce la nota del alumno %d\n", i);
+        scanf("%f", &nota);
+        if (nota>5){
+            contadorapropados++;
+        }
+        else{
+            contadorsuspenso++;
+        }
+    }
+    printf("El numero de alumnos aprobados es: %d y el alumnos suspendidos es: %d\n", contadorapropados, contadorsuspenso);
+}
