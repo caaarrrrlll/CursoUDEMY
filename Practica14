@@ -1,0 +1,21 @@
+//Practica14
+#include <stdio.h>
+#include <stdlib.h>
+
+int main (){
+    char cadena1[150], cadena2[50], cadena3[50], cadena4[50];
+    printf("Introduzca la cadena 1: ");
+    gets(cadena1);
+    printf("\n");
+    printf("Introduzca la cadena 2: ");
+    gets(cadena2);
+    printf("\n");
+    printf("Introduzca la cadena 3: ");
+    gets(cadena3);
+    printf("\n");
+    printf("Introduzca la cadena 4: ");
+    gets(cadena4);
+
+    printf("%s-%s-%s-%s", cadena1, cadena2, cadena3, cadena4);
+
+}
