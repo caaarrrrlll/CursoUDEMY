@@ -1,0 +1,32 @@
+//Practica11
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    float pesos[5];
+    float suma = 0;
+
+    for (int i = 0; i < 5; i++) {
+        printf("Ingrese el peso para su almacenamiento: ");
+        scanf("%f", &pesos[i]);
+        suma = suma + pesos[i];
+    }
+
+    float promedio = suma / 5;
+    int contarmayor = 0;
+    int contarmenor = 0;
+
+    for (int i = 0; i < 5; i++) {
+        if (pesos[i] >= promedio) {
+            contarmayor++;
+        }
+        else {
+            contarmenor++;
+        }
+    }
+
+    printf("El numero de pesos mayores o iguales que el promedio es: %i\n", contarmayor);
+    printf("El numero de pesos menores o iguales que el promedio es: %i\n", contarmenor);
+
+    return 0;
+}
