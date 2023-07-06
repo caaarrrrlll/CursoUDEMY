@@ -1,0 +1,22 @@
+//Practica17
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    
+    float vector[5];
+    int i;
+    for (i=0; i<5; i++){
+        printf("Introduzca un numero real: ");
+        scanf("%f", &vector[i]);
+    }
+    float *puntero = &vector[0];
+    float half=0;
+
+    for (i = 0; i<5; i++){
+        half = half + *(puntero+i);
+    }
+    half = half/5;
+    
+    printf("La media de los vactores del vector es %.2f\n", half);
+}
